@@ -2,7 +2,7 @@
 # Based on https://github.com/aerospike/aerospike-client-c
 
 pkgname=aerospike-client-c-libuv
-pkgver=4.3.12
+pkgver=4.3.13
 pkgrel=1
 pkgdesc="The Aerospike C client provides a C interface for interacting with the Aerospike Database."
 arch=('any')
@@ -47,3 +47,5 @@ package() {
   install -Dm644 modules/lua-core/src/as.lua "${pkgdir}/opt/aerospike/client/sys/udf/lua/"
   install -Dm644 modules/lua-core/src/stream_ops.lua "${pkgdir}/opt/aerospike/client/sys/udf/lua/"
 }
+
+
